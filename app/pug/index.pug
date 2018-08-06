@@ -1,0 +1,163 @@
+//- index.pug
+
+
+include head/head.pug
+body
+	include header/header.pug
+	.check-out.container
+		h2 Оформление заказа
+		.check-out__block.clearfix
+			.check-out__form
+				form
+					.check-out__form_titel
+						span.way-number 1
+						span.way-titel Контактные данные
+					.check-out__form_way
+						.check-out__form_way_contact
+							a(href="#").contact.active.js-news-user Я новый покупатель
+							a(href="#").contact.js-pos-user Я постоянный клиент
+						.check-out__form_way_news-cklient.news-user.open
+							.check-out__form_row
+								label Имя*
+								input(type="text", placeholder="Как вас зовут?")
+							.check-out__form_row
+								label Фамилия*
+								input(type="text", placeholder="Какая у вас фамилия?")
+							.check-out__form_row
+								label Телефон*
+								input(type="text", placeholder="+38 0хх хх хх ")
+							.check-out__form_row
+								label Електронная почта*
+								input(type="email", placeholder="example@gmail.com")
+							.check-out__form_row
+								label Город доставки*
+								select.js-example-basic-single.js-states.form-control
+									option
+									option(value="AL") Alabama
+									option(value="WY") Wyoming
+							.check-out__form_checbox
+								.input-checbox1
+									input#styled-checkbox-6.styled-checkbox1.js-jul(type="checkbox", value="value1",  required)
+									label.clearfix(for="styled-checkbox-6")
+										span Предоставляя свои персональные данные  
+											a(href="#") даю согласие на их обработку
+							.check-out__form_row.button
+								button.btn.js-jul1 Далее
+						.check-out__form_way_news-cklient.pos-user
+							.check-out__form_row
+								label Имя*
+								input(type="text", placeholder="Как вас зовут?")
+							.check-out__form_row
+								label Фамилия*
+								input(type="text", placeholder="Какая у вас фамилия?")
+							.check-out__form_row
+								label Телефон*
+								input(type="text", placeholder="+38 0хх хх хх ")
+							.check-out__form_row
+								label Електронная почта*
+								input(type="email", placeholder="example@gmail.com")
+							.check-out__form_row
+								label Город доставки*
+								select.js-example-basic-single.js-states.form-control
+									option
+									option(value="AL") Alabama
+									option(value="WY") Wyoming
+							.check-out__form_checbox
+								.input-checbox1
+									input#styled-checkbox-61.styled-checkbox1.js-jul22(type="checkbox", value="value1",  required)
+									label.clearfix(for="styled-checkbox-61")
+										span Предоставляя свои персональные данные 
+											a(href="#") даю согласие на их обработку
+							.check-out__form_row.button
+								button.btn.js-jul2 Далее
+					.check-out__form_titel.disabled
+						span.way-number 2
+						span.way-titel Выберите способ оплаты и доставки
+			.check-out__product
+				.check-out__product_item
+					.check-out__product_item_closed
+					.check-out__product_item_block
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+				.check-out__product_item
+					.check-out__product_item_closed
+					.check-out__product_item_block
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+							.check-out__product_item_block_text_gift.clearfix
+								.check-out__product_item_block_text_gift_img
+									img(src="img/mouse.png")
+								.check-out__product_item_block_text_gift_text
+									span.check-out__product_item_block_text_gift_text_titel подарок
+									span.check-out__product_item_block_text_gift_text_text 
+										|	Мышь Logitech M185
+										br
+										|  Wireless Grey 
+				.check-out__product_item
+					.check-out__product_item_closed
+					.check-out__product_item_action 
+						span.check-out__product_item_action_red Акционное предложение: 
+						span.check-out__product_item_action_text  Комплект
+					.check-out__product_item_block
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+					.check-out__product_item_block
+						.check-out__product_item_block_img
+							img(src="img/word.png")
+						.check-out__product_item_block_text
+							span.product-titel Программное обеспечение MICROSOFT Office 365 Personal
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+				.check-out__product_total
+					.check-out__product_total_left
+						a(href="#") Изменить
+					.check-out__product_total_right
+						span.price-bonus Начисленно бонусов: 
+							span.semibold 400 грн
+						span.price Итого к оплате:  
+							span.bold 39 000грн
+				.check-out__product_code
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-bonus Применить  бонусы
+							span.code-bonus 
+								i.icon-bonus
+								| + 200 грн бонусов
+						.check-out__product_code_input.js-bonus_input
+							input(type="text", placeholder="Введите сумму бонусов")
+							button.btn Применить
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-promotional Применить  промокод
+						.check-out__product_code_input.js-promotional_input
+							input(type="text", placeholder="Введите промокод")
+							button.btn Применить
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-certificate Применить  сертификат
+						.check-out__product_code_input.js-certificate_input
+							input(type="text", placeholder="Введите номер сертификата")
+							button.btn Применить
+
+	include footer/footer.pug

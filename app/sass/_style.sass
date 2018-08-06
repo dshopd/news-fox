@@ -1,0 +1,993 @@
+html
+	height: 100%
+	position: relative
+
+body 
+	font-family: 'Montserrat', sans-serif
+	color: #000000
+	background: #E5E5E5
+	line-height: 1.3
+
+.header
+	height: 100px
+	border-bottom: 8px solid #ef4023
+	background: #fff
+	margin-bottom: 17px
+	&__row
+		max-width: 1920px
+		margin: 0 auto
+		padding: 0 15px
+		display: flex
+		height: 100%
+	&__logo
+		display: flex
+		width: 30%
+		height: 100%
+		align-items: center
+		a 
+			width: 300px
+			img 
+				max-width: 100%
+				height: auto
+	&__titel 
+		display: flex
+		align-items: center
+		width: 40%
+		height: 100%
+		font-size: 30px
+		font-weight: 600
+
+
+.search-none
+	.select2-search
+		display: none
+
+
+.select2-results__option
+	font-size: 14px
+	color: #000
+
+.select2-container--default .select2-selection--single 
+	background-color: #fff
+	border: 1px solid #BDBDBD
+	height: 31px
+	border-radius: 0
+	font-family: 'Montserrat', sans-serif
+	color: #000
+	font-size: 14px
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+	color: #000
+	font-size: 14px
+	line-height: 31px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+	width: 25px
+	height: 100%
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b
+	background: url("../img/arrows-bottom.svg") no-repeat center center
+	width: 25px
+	height: 31px
+	border: 0 
+	top: 0
+	left: 0
+
+.container
+	max-width: 1920px
+	margin: 0 auto
+	padding: 0 12px
+.check-out
+	h2 
+		font-weight: bold
+		font-size: 18px
+		line-height: 1.3
+		margin-bottom: 20px
+
+	&__block
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+	&__form
+		width: 56.2%
+		background: #fff
+		padding: 29px 51px 
+		position: relative
+		&_bl 
+			display: none
+			&.open 
+				display: block
+		&_news-post-dom
+			display: none
+			&.open
+				display: block
+		&_samo-mag
+			display: none
+			&.open
+				display: block
+		&_news-post
+			display: none
+			&.open
+				display: block
+		&_dos-focx
+			display: none
+			&.open
+				display: block
+		&_credit
+			margin-bottom: 25px
+			display: none
+			&_pasport
+				display: none
+				&.open
+					display: block
+			&_idpasport
+				display: none
+				&.open
+					display: block
+			table 
+				width: 100%
+				tr 
+					border: 1px solid #BDBDBD
+					td 
+						height: 40px
+						padding-left: 7px
+						vertical-align: middle
+						.select-cred-arrow
+							position: relative
+							width: 82px
+							height: 28px
+							&:after
+								position: absolute
+								content: ""
+								right: 5px
+								top: 9px
+								background: url(../img/arrows-bottom.svg) no-repeat center center
+								width: 15px
+								height: 11px
+								pointer-events: none
+						.select-cred 
+							width: 100%
+							height: 100%
+							border: 1px solid #BDBDBD
+							position: relative
+							background: #fff
+							appearance: none
+							padding-left: 5px
+							cursor: pointer
+						.number-cred
+							width: 82px
+							height: 28px
+							border: 1px solid #BDBDBD
+							position: relative
+							background: #fff
+							appearance: none
+							padding-left: 5px
+						span 
+							font-size: 14px
+			&_radio
+				margin-top: 37px
+				margin-bottom: 25px
+				.styled-radio 
+					position: absolute
+					opacity: 0
+					& + label
+						position: relative
+						cursor: pointer
+						padding: 0
+						display: inline-block
+						width: 100%
+					& + label:before 
+						content: ''
+						margin-right: 10px
+						display: inline-block
+						vertical-align: text-top
+						width: 18px
+						height: 18px
+						float: left
+						border: 1px solid #BDBDBD
+						border-radius: 50%
+						position: relative
+					&:checked + label:after 
+						content: ''
+						position: absolute
+						top: 4px 
+						left: 4px
+						width: 10px
+						height: 10px
+						border-radius: 50%
+						background: #E54415
+				.input-radio
+					margin-bottom: 16px
+					label 
+						position: relative
+						span 
+							color: #000
+							font-size: 14px
+			&.open
+				display: block
+		&_checbox
+			margin-bottom: 25px
+			.styled-checkbox1 
+				position: absolute
+				opacity: 0
+				& + label
+					position: relative
+					cursor: pointer
+					padding: 0
+					display: inline-block
+				& + label:before 
+					content: ''
+					margin-right: 10px
+					display: inline-block
+					vertical-align: text-top
+					width: 25px
+					height: 25px
+					top: 4px
+					float: left
+					border: 1px solid #BDBDBD
+					position: relative
+				&:checked + label:after 
+					content: ''
+					position: absolute
+					top: 13px
+					left: 7px
+					width: 9px
+					height: 5px
+					background: url("../img/checbox.svg") no-repeat center center
+			.input-checbox1
+				label 
+					position: relative
+					span 
+						color: #000
+						font-size: 12px
+						line-height: 1.3
+						display: block
+						top: 0px
+						position: relative
+						padding-left: 31px
+						a
+							color: #2F80ED
+		&_coment
+			margin-bottom: 25px
+			&_block
+				margin-top: 15px
+				display: none
+				&.open
+					display: block
+				textarea
+					width: 100%
+					background: #fff
+					border: 1px solid #BDBDBD
+					height: 96px
+					padding-left: 12px
+					font-family: 'Montserrat', sans-serif
+					color: #828282
+					font-size: 14px
+					padding-top: 15px
+			.coment
+				display: block
+				color: #2F80ED
+				text-decoration: underline dotted
+				cursor: pointer
+		&_way
+			display: none
+			&.open 
+				display: block
+			&_news-cklient
+				display: none
+				&.open
+					display: block
+		&_titel
+			margin-bottom: 16px
+			position: relative
+			&.active
+				margin-bottom: 24px
+				.way-number
+					background: #E54415
+					color: #fff
+			&.disabled
+				.way-number
+					color: #BDBDBD
+					border: 1px solid #BDBDBD
+				.way-titel
+					color: #BDBDBD
+			.way-number
+				width: 23px
+				height: 23px
+				border: 1px solid #E54415
+				position: absolute
+				left: -34px
+				font-size: 14px
+				text-align: center
+				border-radius: 50% 
+				top: -2px 
+				padding-top: 2px
+			.way-titel
+				font-size: 16px
+				font-weight: bold
+				cursor: pointer
+			.way-user
+				font-size: 14px
+				margin-left: 15px
+				margin-right: 18px
+			.way-red
+				text-decoration: none
+				color: #2F80ED
+				font-size: 14px
+		&_row
+			margin-bottom: 22px
+			.date
+				font-size: 14px
+				color: #000
+				font-weight: 500
+			&.mill
+				position: relative
+				.styled-checkbox1 
+					position: absolute
+					opacity: 0
+					& + label
+						position: relative
+						cursor: pointer
+						padding: 0
+						display: inline-block
+					& + label:before 
+						content: ''
+						margin-right: 10px
+						display: inline-block
+						vertical-align: text-top
+						width: 25px
+						height: 25px
+						top: 4px
+						float: left
+						border: 1px solid #BDBDBD
+						position: relative
+					&:checked + label:after 
+						content: ''
+						position: absolute
+						top: 13px
+						left: 7px
+						width: 9px
+						height: 5px
+						background: url("../img/checbox.svg") no-repeat center center
+				.input-checbox1
+					display: inline-block
+					margin-right: 8px
+					width: 25px
+					position: relative
+					top: 4px
+					label 
+						position: relative
+				.input
+					width: 57px
+					margin-right: 8px
+			&_col-4
+				width: 19.15%
+			&_col-8
+				width: 79.05%
+			&_col
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+			&.select
+				label
+					font-weight: 600
+			label
+				font-size: 14px
+				color: #000
+				font-family: 'Montserrat', sans-serif
+			input
+				width: 100%
+				background: #fff
+				border: 1px solid #BDBDBD
+				height: 35px
+				padding-left: 12px
+				font-family: 'Montserrat', sans-serif
+				color: #828282
+				font-size: 14px
+			button
+				&:disabled
+					background: rgba(239, 65, 35, 0.5)
+			&.button
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: flex-end
+			.btn
+				background: #EF4123
+				border: none
+				color: #fff
+				font-size: 14px
+				font-weight: 600
+				padding: 12px 30px
+				cursor: pointer
+				&.disabled
+					background: rgba(239, 65, 35, 0.5)
+			.select2
+				width: 100% !important
+		&_way
+			position: relative
+			&_contact
+				margin-bottom: 35px
+				.contact
+					font-size: 14px
+					text-decoration: none
+					color: #000
+					margin: 0 10px
+					cursor: pointer 
+					&.active 
+						color: #2F80ED
+				
+
+
+	&__product
+		width: 43.2%
+		&_item
+			padding: 41px 77px
+			background: #fff
+			position: relative
+			border-bottom: 0.5px solid #BDBDBD
+			&_delet 
+				p 
+					font-weight: 500
+					font-size: 13px
+					a 
+						font-size: 13px
+						color: #2F80ED
+						text-decoration: none
+			&_product
+				margin-bottom: 15px
+				p 
+					font-weight: 700
+					font-size: 16px
+			&_addres
+				margin-bottom: 25px
+				p 
+					font-size: 13px
+					font-weight: 500
+					.red 
+						color: #ef4123
+			&_score
+				margin-top: 15px
+				&_block
+					margin-top: 5px
+					display: none
+					position: relative
+					.check-out__form_row
+						margin-bottom: 0px
+					&.open 
+						display: block
+				.score 
+					display: block
+					color: #2F80ED
+					text-decoration: underline dotted
+					cursor: pointer
+					font-size: 14px
+			&_action
+				margin-bottom: 12px
+				position: relative
+				top: -7px
+				&_red 
+					font-size: 14px
+					color: rgba(239, 65, 35, 1)
+				&_text
+					font-size: 14px
+			&_closed
+				width: 12px
+				height: 12px
+				position: absolute
+				top: -5px
+				left: -30px
+				background: url("../img/closed.svg") no-repeat center center
+				cursor: pointer
+			&_block
+				display: flex
+				position: relative
+				&:nth-of-type(1n+3)
+					margin-top: 9px
+				&_img 
+					width: 85px
+					margin-right: 43px
+					flex: none
+					img 
+						width: 100%
+				&_text
+					.product-titel
+						font-size: 13px
+						font-weight: 500
+						display: block
+						margin-bottom: 5px
+					.product-oldPrice
+						font-size: 13px
+						text-decoration: line-through
+						display: block
+						margin-bottom: 3px
+					.product-price
+						display: block
+						.product-price-number
+							font-size: 16px
+							font-weight: 800
+							margin-right: 15px
+						.product-bonus 
+							font-size: 13px
+							position: relative
+							.icon-bonus
+								width: 18px
+								height: 19px
+								margin-right: 4px
+								display: inline-block
+								background: url("../img/bonus.svg") no-repeat center center
+								position: relative
+								top: 4px
+					&_gift
+						margin-top: 16px
+						border: 1px solid #FFD44D
+						padding: 11px 16px
+						display: inline-block
+						&_img 
+							margin-right: 16px
+							float: left
+							img 
+								max-width: 100%
+						&_text
+							float: left
+							&_titel
+								font-size: 12px
+								text-transform: uppercase
+								background: #FFD44D
+								padding: 2px 5px
+								margin-bottom: 5px
+								display: inline-block
+							&_text
+								display: block
+								font-size: 12px
+		&_total
+			padding: 18px 41px 41px 81px
+			background: #fff
+			position: relative
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: flex-end
+			border-bottom: 0.5px solid #BDBDBD
+			&.top 
+				margin-top: 5px
+			&_left
+				width: 50%
+				display: flex
+				align-items: flex-end
+				a 
+					font-size: 13px
+					color: #2F80ED
+					text-decoration: none
+			&_right
+				width: 50%
+				display: flex
+				justify-content: flex-end
+				flex-direction: column
+				text-align: right
+				.semibold 
+					font-weight: 600
+				.bold 
+					font-weight: 700
+				.price-bonus
+					font-size: 14px
+					margin-bottom: 8px
+				.price
+					font-size: 14px
+					position: relative
+					.bold
+						font-size: 19px
+						position: relative
+						top: 3px
+		&_code
+			padding: 23px 47px
+			background: #fff
+			margin-top: 6px
+			&_input
+				width: 388px
+				height: 35px
+				position: relative
+				display: none
+				margin-bottom: 10px
+				&.open
+					display: flex
+				input
+					width: 233px
+					height: 100%
+					background: #FFFFFF
+					border: 1px solid #BDBDBD
+					font-size: 12px
+					color: #828282
+					font-family: 'Montserrat', sans-serif
+					padding-left: 5px
+				.btn 
+					width: 155px
+					height: 100%
+					border: none
+					cursor: pointer
+					border: 1px solid #EF4123
+					font-size: 14px
+					background: #fff
+
+
+			.text 
+				margin-bottom: 17px
+				display: block
+				.titel
+					color: #2F80ED
+					font-size: 14px
+					text-decoration: underline dotted
+					cursor: pointer
+				.code-bonus 
+					margin-left: 16px
+					font-size: 14px
+					position: relative
+					text-decoration: none
+					.icon-bonus
+						width: 18px
+						height: 19px
+						margin-right: 4px
+						display: inline-block
+						background: url("../img/bonus.svg") no-repeat center center
+						position: relative
+						top: 4px
+
+
+.you
+	max-width: 1920px
+	background: #fff
+	margin-left: 18px
+	margin-right: 18px
+	margin-bottom: 26px
+	.you__text
+		background: #fff
+		margin: 0 auto
+	.center-text
+		text-align: center
+	&__block
+		padding: 40px 15px
+		&_cent
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			margin-bottom: 42px
+			.you__block_promo
+				width: 308px
+				height: 110px
+		&_promo
+			border: 1px solid #BDBDBD
+			margin-bottom: 25px
+			padding: 16px 20px
+		&.center-size
+			max-width: 444px
+			margin: 0 auto
+		&.center-size-you3
+			max-width: 662px
+			margin: 0 auto
+		.margin-left
+			margin-left: 37px
+		.titel
+			font-weight: 700
+			font-size: 18px
+			margin-bottom: 30px
+		&_text
+			margin-bottom: 15px
+			&.you-border
+				border: 1px solid #BDBDBD
+				padding: 27px 52px
+		&_info
+			margin-bottom: 30px
+			max-width: 683px
+
+		&_button
+			a 
+				font-size: 14px
+				color: #2F80ED
+				text-decoration: underline dotted
+	.promo-yellow
+		display: inline-block
+		font-size: 12px
+		background: #FFD44D
+		padding: 2px 4px
+		margin-bottom: 9px
+	.promo-number
+		display: block
+		font-size: 14px
+		margin-bottom: 5px
+	.promo-procent
+		font-size: 14px
+	.blue
+		color: #2F80ED
+	.semibold
+		font-weight: 600
+	.bold 
+		font-weight: 700
+	.medium
+		font-weight: 500
+	.you-number
+		font-size: 14px
+		margin-bottom: 30px
+		display: block
+	.you-price
+		font-size: 14px
+		display: block
+		margin-bottom: 5px
+	.you-text
+		font-size: 14px
+		display: block
+		margin-bottom: 5px
+	.you-total
+		font-size: 14px
+		position: relative
+		margin-bottom: 38px
+		display: block
+		&.you1-you-total
+			margin-top: 30px
+			margin-bottom: 0px
+		.size
+			font-size: 18px
+			position: relative
+			top: 1px
+	p 
+		font-size: 14px
+
+.action-slide
+	max-width: 1920px
+	margin-left: 18px
+	margin-right: 18px
+	&__block
+		margin: 0 auto
+	.titel
+		font-size: 18px
+		margin-bottom: 30px
+		font-weight: 700
+	&_center
+		.slick-prev
+			left: 5px
+			z-index: 2
+			&:before
+				background: url("../img/arrow-slide-left.svg") no-repeat center center
+				width: 10px
+				height: 5px
+				color: rgba(255,255,255,0)
+		.slick-next
+			right: 5px
+			z-index: 2
+			&:before
+				background: url("../img/arrows-slide-right.svg") no-repeat center center
+				width: 10px
+				height: 5px
+				color: rgba(255,255,255,0)
+		&_item
+			padding: 17px 16px 17px 5px
+			background: #fff
+			margin: 0 5px
+			&_img 
+				text-align: center
+				max-height: 146px
+				margin-bottom: 28px
+				img 
+					max-width: 100%
+					height: 100%
+					margin: 0 auto
+			&_text
+				min-height: 120px
+				.media
+					font-weight: 500
+				.slide-action
+					font-size: 14px
+					display: block
+					margin-bottom: 5px
+				.slide-red
+					color: #E54415
+					font-size: 14px
+					display: block
+					margin-bottom: 20px
+				.slide-date
+					font-size: 14px
+					position: relative
+					display: block
+					.size
+						position: relative
+						top: 2px
+						font-size: 24px
+			&_button
+				float: right
+				.btn
+					width: 123px
+					height: 33px
+					text-align: center
+					color: #fff
+					font-size: 15px
+					font-weight: 600
+					background: #E54415
+					text-decoration: none
+					display: block
+					padding-top: 5px
+
+
+
+.check-out__open
+	padding-bottom: 15px
+	border-bottom: 1px solid #BDBDBD
+	display: none
+	.open-open
+		font-size: 16px
+		color: #2F80ED
+		cursor: pointer
+
+
+.footer
+	padding: 35px 0
+	&__row
+		max-width: 1920px
+		margin: 0 auto
+		p 
+			text-align: center
+			font-size: 14px
+
+
+
+@media (max-width: 1365px)
+	.check-out__product_item
+		padding: 26px 38px
+	.check-out__product_total
+		padding: 18px 40px 25px 35px
+	.check-out__product_total_left
+		width: 33%
+	.check-out__product_total_right
+		width: 66%
+	.check-out__product_code
+		padding: 23px 30px
+	.check-out__product_code_input input
+		width: 223px
+	.check-out__form_titel .way-user
+		display: inline-block
+	.check-out__form_titel .way-red
+		float: right
+	.check-out__form_titel.active
+		margin-bottom: 40px
+@media (max-width: 1023px) 
+	.check-out__form
+		width: 52%
+	.check-out__product
+		width: 47.5%
+@media (max-width: 990px)
+	.check-out__form
+		width: 100%
+	.check-out__product
+		width: 100%
+	.check-out__form_way_contact
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+	.check-out__form_way_contact .contact
+		width: 49.5%
+		margin: 0
+		background: #F2F2F2
+		text-align: center
+		padding: 20px 0
+	.check-out__product_item_closed
+		left: auto
+		right: 15px
+		top: 0px
+	.check-out__product_item_block_text
+		width: 100%
+	.check-out__product_item_block_text_gift
+		display: block
+	.header__logo
+		width: 50%
+	.header__titel
+		width: 50%
+	.check-out__open
+		display: block
+	.js-open-pr
+		display: none
+		&.open
+			display: block
+@media (max-width: 767px)
+	.check-out__form
+		padding: 15px 10px
+	.check-out__product_item
+		padding: 15px 25px 15px 10px
+	.check-out__product_total
+		padding: 15px 10px
+	.check-out__product_code
+		padding: 15px 10px
+	.check-out__form_titel .way-number
+		position: relative
+		left: auto
+		top: auto
+		display: inline-block
+		margin-right: 10px
+	.check-out__form_titel .way-user
+		display: block
+		margin: 10px 0 15px
+	.check-out__form_titel .way-red
+		float: none
+	.check-out__form_titel.active
+		margin-bottom: 15px
+	.check-out__product_item_block_img
+		margin-right: 10px
+	.check-out__product_item_closed
+		right: -15px
+		top: 3px
+	.you
+		padding-left: 15px
+		padding-right: 15px
+		margin-right: 0px
+		margin-left: 0px
+	.you__block
+		padding: 20px 0
+	.you__block .margin-left
+		margin-left: 0
+	.you__block_text.you-border
+		padding-left: 15px
+		padding-right: 15px
+@media (max-width: 600px)
+	.header__titel
+		display: none
+	.header__logo
+		width: 100%
+@media (max-width: 479px)
+	.check-out__form_way_contact .contact
+		padding: 15px 10px
+		font-size: 12px
+	.check-out__form_row input
+		font-size: 12px
+	.select2-container--default .select2-selection--single .select2-selection__rendered
+		font-size: 12px
+	.check-out__form_titel .way-titel
+		padding-left: 33px
+		display: block
+		position: relative
+		top: -20px
+	.check-out__form_coment .coment
+		font-size: 14px
+	.check-out__form_credit table tr td span
+		font-size: 12px
+	.check-out__form_row_col-4
+		width: 26%
+	.check-out__form_row_col-8
+		width: 72%
+	.check-out__product_total_right
+		width: 100%
+	.check-out__product_total_left
+		width: 100%
+		text-align: right
+		order: 2
+		margin-top: 10px
+		display: block
+	.check-out__product_code .text .code-bonus
+		font-size: 12px
+		margin-left: 3px
+	.check-out__product_code .text .code-bonus .icon-bonus
+		width: 13px
+		height: 14px
+		background-size: cover
+	.check-out__product_code .text .titel
+		font-size: 12px
+	.check-out__product_item_block_text .product-price .product-bonus
+		display: block
+	.check-out__product_item_action_text
+		font-size: 12px
+	.check-out__product_item_action_red
+		font-size: 12px
+	.check-out__product_code_input
+		width: 100%
+	.check-out__product_item_block_text_gift_img
+		width: 100%
+		margin-right: 0
+		margin-bottom: 10px
+		text-align: center
+	.check-out__form_row.mill .input.col-2
+		width: 49%
+		margin-right: 0
+		margin-bottom: 10px
+	.check-out__form_row.mill .input
+		width: 32%
+		margin-right: 5px

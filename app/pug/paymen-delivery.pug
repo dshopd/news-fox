@@ -1,0 +1,507 @@
+//- index.pug
+
+
+include head/head.pug
+body
+	include header/header.pug
+	.check-out.container
+		h2 Оформление заказа
+		.check-out__block.clearfix
+			.check-out__form
+				form
+					.check-out__form_titel.active
+						span.way-number 1
+						span.way-titel.show Контактные данные
+						span.way-user Юля Рупчева, 093 123 45 67
+						a.way-red(href="index.html") Редактировать
+					.check-out__form_way.js-op
+						.check-out__form_way_contact
+							a(href="#").contact.active.js-news-user Я новый покупатель
+							a(href="#").contact.js-pos-user Я постоянный клиент
+						.check-out__form_way_news-cklient.news-user.open
+							.check-out__form_row
+								label Имя*
+								input(type="text", placeholder="Как вас зовут?")
+							.check-out__form_row
+								label Фамилия*
+								input(type="text", placeholder="Какая у вас фамилия?")
+							.check-out__form_row
+								label Телефон*
+								input.phone-input(type="text", placeholder="+38 0хх хх хх ")
+							.check-out__form_row
+								label Електронная почта*
+								input(type="email", placeholder="example@gmail.com")
+							.check-out__form_row
+								label Город доставки*
+								select.js-example-basic-single.js-states.form-control
+									option
+									option(value="AL") Alabama
+									option(value="WY") Wyoming
+							.check-out__form_checbox
+								.input-checbox1
+									input#styled-checkbox-6.styled-checkbox1.js-jul(type="checkbox", value="value1",  required)
+									label.clearfix(for="styled-checkbox-6")
+										span Предоставляя свои персональные данные  
+											a(href="#") даю согласие на их обработку
+							.check-out__form_row.button
+								button.btn.js-jul1 Далее
+						.check-out__form_way_news-cklient.pos-user
+							.check-out__form_row
+								label Имя*
+								input(type="text", placeholder="Как вас зовут?")
+							.check-out__form_row
+								label Фамилия*
+								input(type="text", placeholder="Какая у вас фамилия?")
+							.check-out__form_row
+								label Телефон*
+								input.phone-input(type="text", placeholder="+38 0хх хх хх ")
+							.check-out__form_row
+								label Електронная почта*
+								input(type="email", placeholder="example@gmail.com")
+							.check-out__form_row
+								label Город доставки*
+								select.js-example-basic-single.js-states.form-control
+									option
+									option(value="AL") Alabama
+									option(value="WY") Wyoming
+							.check-out__form_checbox
+								.input-checbox1
+									input#styled-checkbox-61.styled-checkbox1.js-jul22(type="checkbox", value="value1",  required)
+									label.clearfix(for="styled-checkbox-61")
+										span Предоставляя свои персональные данные 
+											a(href="#") даю согласие на их обработку
+							.check-out__form_row.button
+								button.btn.js-jul2 Далее
+					.check-out__form_titel
+						span.way-number 2
+						span.way-titel.show1 Выберите способ оплаты и доставки
+					.check-out__form_bl.js-op1
+						.check-out__form_delivery
+							.check-out__form_row.select
+								label Выберите способ доставки: 
+								select.js-delivery
+									option
+									option(value="4") Самовывоз из магазина + 50 грн бонусов!
+									option(value="1") Доставка Фокстрот (300 грн)
+									option(value="5") Доставка Нова Пошта (300 грн)
+									option(value="3") Доставка до отделения Нова Пошта (300 грн)
+									option(value="3") Доставка до отделения УКРПОШТА (300 грн)
+									option(value="5") Укрпошта Експрес (300 грн)
+						.check-out__form_dos-focx.js-dos-focx
+							.check-out__form_row
+								label Адрес
+								input(type="text", placeholder="Улица")
+							.check-out__form_row.mill
+								input.input.col-2(type="text", placeholder="Дом")
+								input.input.col-2(type="text", placeholder="Кв")
+								.input-checbox1.js-yl
+									input#styled-checkbox-3.styled-checkbox1.js-inyl(type="checkbox", value="value1",  required)
+									label.clearfix(for="styled-checkbox-3")
+										span
+								input.input.js-yl-input.col-3(type="text", placeholder="Этаж")
+								.input-checbox1
+									input#styled-checkbox-4.styled-checkbox1(type="checkbox", value="value1",  required)
+									label.clearfix(for="styled-checkbox-4")
+										span
+								input.input.col-3(type="text", placeholder="Лифт", disabled="disabled")
+						.check-out__form_news-post.js-news-post
+							.check-out__form_row
+								label Выберите центр выдачи
+								select.js-example-basic-single1.js-states.form-control
+									option
+									option(value="AL") Отлеление № 1: ул. Пироговский путь 135
+									option(value="WY") Отлеление № 1: ул. Пироговский путь 135
+							.check-out__form_row
+								span.date Ориентировочная дата прибытия вашего заказа : 05.03.2018 - 05.03.2018
+						.check-out__form_samo-mag.js-samo-mag
+							.check-out__form_row
+								label Выберите  магазин
+								select.js-example-basic-single2.js-states.form-control
+									option
+									option(value="AL") "Фокстрот", просп. Степана Бандеры, 23 Пн-Пт 09:00-22:00
+									option(value="WY") "Фокстрот", просп. Степана Бандеры, 23 Пн-Пт 09:00-22:00
+						.check-out__form_news-post-dom.js-news-post-dom
+							.check-out__form_row
+								label Адрес
+								input(type="text", placeholder="Улица")
+							.check-out__form_row.mill
+								input.input.col-2(type="text", placeholder="Дом")
+								input.input.col-2(type="text", placeholder="Кв")
+								.input-checbox1.js-yl
+									input#styled-checkbox-13.styled-checkbox1.js-inyl(type="checkbox", value="value1",  required)
+									label.clearfix(for="styled-checkbox-13")
+										span
+								input.input.js-yl-input.col-3(type="text", placeholder="Этаж")
+								.input-checbox1
+									input#styled-checkbox-14.styled-checkbox1(type="checkbox", value="value1",  required)
+									label.clearfix(for="styled-checkbox-14")
+										span
+								input.input.col-3(type="text", placeholder="Лифт", disabled="disabled")
+						.check-out__form_payment
+							.check-out__form_row.select
+								label Выберите способ оплаты:
+								select.js-payment
+									option
+									option(value="1") Оплата наличными
+									option(value="2") Приват Банк Оплата частями
+									option(value="3") Кредит
+									option(value="1") Visa / MasterCard	
+									option(value="1") Приват24	
+									option(value="1") ПриватБанк - Мгновенная рассрочка акционная
+									option(value="1") Банковский перевод	
+						.check-out__form_credit.js-credit
+							table
+								tr
+									td 
+										span Количество частей
+									td 
+										.select-cred-arrow
+											select.select-cred 
+												option 15 мес
+												option 10 мес
+												option 5 мес
+								tr
+									td 
+										span Ежемесячная комиссия
+									td 
+										span 3% 
+								tr 
+									td 
+										span Ежемесячный платеж (грн)
+									td 
+										span 720
+						.check-out__form_credit.js-pr-credit
+							table
+								tr
+									td 
+										span Льготный период
+									td 
+										span 15 мес
+								tr
+									td 
+										span Срок кредита
+									td 
+										.select-cred-arrow
+											select.select-cred 
+												option 15 мес
+												option 10 мес
+												option 5 мес 
+								tr 
+									td 
+										span Первый взнос (грн)
+									td 
+										input.number-cred(type="number" value="0" name="eyes" min="0" max="100" )
+								tr
+									td 
+										span Сумма кредита (грн)
+									td 
+										span 1000 
+								tr
+									td 
+										span Ежемесячная комиссия после льготного периода
+									td 
+										span 3% от суммы кредита 
+								tr
+									td 
+										span Годовая процентная ставка
+									td 
+										span 0,01% 
+								tr
+									td 
+										span Ежемесячный платеж (грн)
+									td 
+										span 720
+							.check-out__form_credit_radio
+								.input-radio
+									input#zapb1.styled-radio.js-radio1(type="radio", name="contact2", value="Паспорт", checked="checked")
+									label.clearfix(for="zapb1")
+										span Паспорт 
+								.input-radio
+									input#zapb2.styled-radio.js-radio2(type="radio", name="contact2", value="ID паспорт")
+									label.clearfix(for="zapb2")
+										span ID паспорт 
+							.check-out__form_credit_pasport.pasport.open
+								.check-out__form_row
+									label Имя*
+									input(type="text", placeholder="Введите ваше имя")
+								.check-out__form_row
+									label Фамилия*
+									input(type="text", placeholder="Введите вашу фамилию")
+								.check-out__form_row
+									label Отчество*
+									input(type="text", placeholder="Введите ваше отчество")
+								.check-out__form_row
+									label Серия и номер паспорта*
+									.check-out__form_row_col
+										.check-out__form_row_col-4
+											input(type="text", placeholder="Серия")
+										.check-out__form_row_col-8
+											input(type="text", placeholder="Номер")
+								.check-out__form_row
+									label Кем выдан паспорт и когда*
+									input(type="text", placeholder="Введите кем выдан паспорт и когда")
+								.check-out__form_row
+									label ИНН*
+									input(type="text", placeholder="Введите ваше имя")
+								.check-out__form_row
+									label Дата рождения*
+									input(type="date", placeholder="Дата рождения")
+							.check-out__form_credit_idpasport.idpasport
+								.check-out__form_row
+									label Имя*
+									input(type="text", placeholder="Введите ваше имя")
+								.check-out__form_row
+									label Фамилия*
+									input(type="text", placeholder="Введите вашу фамилию")
+								.check-out__form_row
+									label Отчество*
+									input(type="text", placeholder="Введите ваше отчество")
+								.check-out__form_row
+									label Запись №:*
+									input(type="text", placeholder="Запись №")
+								.check-out__form_row
+									label Документ №:*
+									input(type="text", placeholder="Документ №")
+								.check-out__form_row
+									label Орган выдачи:*
+									input(type="text", placeholder="Орган выдачи")
+								.check-out__form_row
+									label Дата выдачи:*
+									input(type="text", placeholder="Дата выдачи")
+								.check-out__form_row
+									label Действителен до:*
+									input(type="text", placeholder="Действителен до")
+								.check-out__form_row
+									label ИНН:*
+									input(type="text", placeholder="ИНН")
+								.check-out__form_row
+									label Дата рождения*
+									input(type="date", placeholder="Дата рождения")
+						.check-out__form_coment
+							span.coment.js-coment Добавить комментарий к заказу
+							.check-out__form_coment_block.js-coment-textarea
+								textarea
+						.check-out__form_checbox
+							.input-checbox1
+								input#styled-checkbox-6.styled-checkbox1(type="checkbox", value="value1", checked="checked", required)
+								label.clearfix(for="styled-checkbox-6")
+									span Оформляя заказ, я соглашаюсь стать участником программы лояльности «Фокс клуб» и получать бонусы за покупки и другие преимущества участия.
+				.check-out__open
+					span.open-open.js-open-product Посмотреть товары
+			.check-out__product
+				.check-out__product_item.js-open-pr
+					.check-out__product_item_product
+						p.bold Ваши товары
+					.check-out__product_item_addres
+						p "Фокстрот", ул. Независимости, 81  
+							span.red Пн-Сб 8:00-17:00 Вс 8:00-16:00 
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+
+					.check-out__product_item_score
+						span.score.js-score Выберете другой магазин
+						.check-out__product_item_score_block.js-score-open
+							.check-out__form_row
+								select.js-example-basic-single1.js-states.form-control
+									option
+									option(value="AL") Отлеление № 1: ул. Пироговский путь 135
+									option(value="WY") Отлеление № 1: ул. Пироговский путь 135
+				.check-out__product_total.js-open-pr
+					.check-out__product_total_right
+						span.price-bonus Начисленно бонусов: 
+							span.semibold 400 грн
+						span.price Итого к оплате:  
+							span.bold 39 000грн
+				.check-out__product_item.js-open-pr
+					.check-out__product_item_product
+						p.bold Ваши товары
+					.check-out__product_item_delet
+						p 
+					.check-out__product_item_addres
+						p "Фокстрот", ул. Независимости, 81  
+							span.red Пн-Сб 8:00-17:00 Вс 8:00-16:00
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+							.check-out__product_item_block_text_gift.clearfix
+								.check-out__product_item_block_text_gift_img
+									img(src="img/mouse.png")
+								.check-out__product_item_block_text_gift_text
+									span.check-out__product_item_block_text_gift_text_titel подарок
+									span.check-out__product_item_block_text_gift_text_text 
+										|	Мышь Logitech M185
+										br
+										|  Wireless Grey 
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+							span.product-oldPrice 14 295 грн
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+
+					.check-out__product_item_score
+						span.score.js-score Выберете другой магазин
+						.check-out__product_item_score_block.js-score-open
+							.check-out__form_row
+								select.js-example-basic-single1.js-states.form-control
+									option
+									option(value="AL") Отлеление № 1: ул. Пироговский путь 135
+									option(value="WY") Отлеление № 1: ул. Пироговский путь 135
+				.check-out__product_total.js-open-pr
+					.check-out__product_total_right
+						span.price-bonus Начисленно бонусов: 
+							span.semibold 400 грн
+						span.price Итого к оплате:  
+							span.bold 39 000грн
+				.check-out__product_item.js-open-pr
+					.check-out__product_item_action 
+						span.check-out__product_item_action_red Акционное предложение: 
+						span.check-out__product_item_action_text  Комплект
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/nout.png")
+						.check-out__product_item_block_text
+							span.product-titel Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB
+					.check-out__product_item_block
+						.check-out__product_item_closed
+						.check-out__product_item_block_img
+							img(src="img/word.png")
+						.check-out__product_item_block_text
+							span.product-titel Программное обеспечение MICROSOFT Office 365 Personal
+							span.product-price
+								span.product-price-number 123 999 грн
+								span.product-bonus 
+									i.icon-bonus
+									| + 200 грн бонусов
+				.check-out__product_total.js-open-pr
+					.check-out__product_total_right
+						span.price-bonus Начисленно бонусов: 
+							span.semibold 400 грн
+						span.price Итого к оплате:  
+							span.bold 39 000грн
+				.check-out__product_total.top
+					.check-out__product_total_left
+						a(href="#") Изменить
+					.check-out__product_total_right
+						span.price-bonus Начисленно бонусов: 
+							span.semibold 400 грн
+						span.price Итого к оплате:  
+							span.bold 39 000грн
+				.check-out__product_item.js-open-pr
+					.check-out__product_item_product
+						p.bold Ваши товары
+					.check-out__product_item_delet
+						p Вы удалили все товары. 
+							a(href="#") Вернуться на главную
+				.check-out__product_code
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-bonus Применить  бонусы
+							span.code-bonus 
+								i.icon-bonus
+								| + 200 грн бонусов
+						.check-out__product_code_input.js-bonus_input
+							input(type="text", placeholder="Введите сумму бонусов")
+							button.btn Применить
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-promotional Применить  промокод
+						.check-out__product_code_input.js-promotional_input
+							input(type="text", placeholder="Введите промокод")
+							button.btn Применить
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-certificate Применить  сертификат
+						.check-out__product_code_input.js-certificate_input
+							input(type="text", placeholder="Введите номер сертификата")
+							button.btn Применить
+					.check-out__form_row.button
+						button.btn Подтвердить заказ
+
+	include footer/footer.pug

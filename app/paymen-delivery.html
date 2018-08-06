@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>titel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+  </head>
+</html>
+<body>
+  <header class="header">
+    <div class="header__row">
+      <div class="header__logo"><a href="#"><img src="img/logo.svg"></a></div>
+      <div class="header__titel">Оформление заказа</div>
+    </div>
+  </header>
+  <div class="check-out container">
+    <h2>Оформление заказа</h2>
+    <div class="check-out__block clearfix">
+      <div class="check-out__form">
+        <form>
+          <div class="check-out__form_titel active"><span class="way-number">1</span><span class="way-titel show">Контактные данные</span><span class="way-user">Юля Рупчева, 093 123 45 67</span><a class="way-red" href="index.html">Редактировать</a></div>
+          <div class="check-out__form_way js-op">
+            <div class="check-out__form_way_contact"><a class="contact active js-news-user" href="#">Я новый покупатель</a><a class="contact js-pos-user" href="#">Я постоянный клиент</a></div>
+            <div class="check-out__form_way_news-cklient news-user open">
+              <div class="check-out__form_row">
+                <label>Имя*</label>
+                <input type="text" placeholder="Как вас зовут?">
+              </div>
+              <div class="check-out__form_row">
+                <label>Фамилия*</label>
+                <input type="text" placeholder="Какая у вас фамилия?">
+              </div>
+              <div class="check-out__form_row">
+                <label>Телефон*</label>
+                <input class="phone-input" type="text" placeholder="+38 0хх хх хх ">
+              </div>
+              <div class="check-out__form_row">
+                <label>Електронная почта*</label>
+                <input type="email" placeholder="example@gmail.com">
+              </div>
+              <div class="check-out__form_row">
+                <label>Город доставки*</label>
+                <select class="js-example-basic-single js-states form-control">
+                  <option></option>
+                  <option value="AL">Alabama</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <div class="check-out__form_checbox">
+                <div class="input-checbox1">
+                  <input class="styled-checkbox1 js-jul" id="styled-checkbox-6" type="checkbox" value="value1" required>
+                  <label class="clearfix" for="styled-checkbox-6"><span>Предоставляя свои персональные данные  <a href="#">даю согласие на их обработку</a></span></label>
+                </div>
+              </div>
+              <div class="check-out__form_row button">
+                <button class="btn js-jul1">Далее</button>
+              </div>
+            </div>
+            <div class="check-out__form_way_news-cklient pos-user">
+              <div class="check-out__form_row">
+                <label>Имя*</label>
+                <input type="text" placeholder="Как вас зовут?">
+              </div>
+              <div class="check-out__form_row">
+                <label>Фамилия*</label>
+                <input type="text" placeholder="Какая у вас фамилия?">
+              </div>
+              <div class="check-out__form_row">
+                <label>Телефон*</label>
+                <input class="phone-input" type="text" placeholder="+38 0хх хх хх ">
+              </div>
+              <div class="check-out__form_row">
+                <label>Електронная почта*</label>
+                <input type="email" placeholder="example@gmail.com">
+              </div>
+              <div class="check-out__form_row">
+                <label>Город доставки*</label>
+                <select class="js-example-basic-single js-states form-control">
+                  <option></option>
+                  <option value="AL">Alabama</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <div class="check-out__form_checbox">
+                <div class="input-checbox1">
+                  <input class="styled-checkbox1 js-jul22" id="styled-checkbox-61" type="checkbox" value="value1" required>
+                  <label class="clearfix" for="styled-checkbox-61"><span>Предоставляя свои персональные данные <a href="#">даю согласие на их обработку</a></span></label>
+                </div>
+              </div>
+              <div class="check-out__form_row button">
+                <button class="btn js-jul2">Далее</button>
+              </div>
+            </div>
+          </div>
+          <div class="check-out__form_titel"><span class="way-number">2</span><span class="way-titel show1">Выберите способ оплаты и доставки</span></div>
+          <div class="check-out__form_bl js-op1">
+            <div class="check-out__form_delivery">
+              <div class="check-out__form_row select">
+                <label>Выберите способ доставки: </label>
+                <select class="js-delivery">
+                  <option></option>
+                  <option value="4">Самовывоз из магазина + 50 грн бонусов!</option>
+                  <option value="1">Доставка Фокстрот (300 грн)</option>
+                  <option value="5">Доставка Нова Пошта (300 грн)</option>
+                  <option value="3">Доставка до отделения Нова Пошта (300 грн)</option>
+                  <option value="3">Доставка до отделения УКРПОШТА (300 грн)</option>
+                  <option value="5">Укрпошта Експрес (300 грн)</option>
+                </select>
+              </div>
+            </div>
+            <div class="check-out__form_dos-focx js-dos-focx">
+              <div class="check-out__form_row">
+                <label>Адрес</label>
+                <input type="text" placeholder="Улица">
+              </div>
+              <div class="check-out__form_row mill">
+                <input class="input col-2" type="text" placeholder="Дом">
+                <input class="input col-2" type="text" placeholder="Кв">
+                <div class="input-checbox1 js-yl">
+                  <input class="styled-checkbox1 js-inyl" id="styled-checkbox-3" type="checkbox" value="value1" required>
+                  <label class="clearfix" for="styled-checkbox-3"><span></span></label>
+                </div>
+                <input class="input js-yl-input col-3" type="text" placeholder="Этаж">
+                <div class="input-checbox1">
+                  <input class="styled-checkbox1" id="styled-checkbox-4" type="checkbox" value="value1" required>
+                  <label class="clearfix" for="styled-checkbox-4"><span></span></label>
+                </div>
+                <input class="input col-3" type="text" placeholder="Лифт" disabled="disabled">
+              </div>
+            </div>
+            <div class="check-out__form_news-post js-news-post">
+              <div class="check-out__form_row">
+                <label>Выберите центр выдачи</label>
+                <select class="js-example-basic-single1 js-states form-control">
+                  <option></option>
+                  <option value="AL">Отлеление № 1: ул. Пироговский путь 135</option>
+                  <option value="WY">Отлеление № 1: ул. Пироговский путь 135</option>
+                </select>
+              </div>
+              <div class="check-out__form_row"><span class="date">Ориентировочная дата прибытия вашего заказа : 05.03.2018 - 05.03.2018</span></div>
+            </div>
+            <div class="check-out__form_samo-mag js-samo-mag">
+              <div class="check-out__form_row">
+                <label>Выберите  магазин</label>
+                <select class="js-example-basic-single2 js-states form-control">
+                  <option></option>
+                  <option value="AL">"Фокстрот", просп. Степана Бандеры, 23 Пн-Пт 09:00-22:00</option>
+                  <option value="WY">"Фокстрот", просп. Степана Бандеры, 23 Пн-Пт 09:00-22:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="check-out__form_news-post-dom js-news-post-dom">
+              <div class="check-out__form_row">
+                <label>Адрес</label>
+                <input type="text" placeholder="Улица">
+              </div>
+              <div class="check-out__form_row mill">
+                <input class="input col-2" type="text" placeholder="Дом">
+                <input class="input col-2" type="text" placeholder="Кв">
+                <div class="input-checbox1 js-yl">
+                  <input class="styled-checkbox1 js-inyl" id="styled-checkbox-13" type="checkbox" value="value1" required>
+                  <label class="clearfix" for="styled-checkbox-13"><span></span></label>
+                </div>
+                <input class="input js-yl-input col-3" type="text" placeholder="Этаж">
+                <div class="input-checbox1">
+                  <input class="styled-checkbox1" id="styled-checkbox-14" type="checkbox" value="value1" required>
+                  <label class="clearfix" for="styled-checkbox-14"><span></span></label>
+                </div>
+                <input class="input col-3" type="text" placeholder="Лифт" disabled="disabled">
+              </div>
+            </div>
+            <div class="check-out__form_payment">
+              <div class="check-out__form_row select">
+                <label>Выберите способ оплаты:</label>
+                <select class="js-payment">
+                  <option></option>
+                  <option value="1">Оплата наличными</option>
+                  <option value="2">Приват Банк Оплата частями</option>
+                  <option value="3">Кредит</option>
+                  <option value="1">Visa / MasterCard	</option>
+                  <option value="1">Приват24	</option>
+                  <option value="1">ПриватБанк - Мгновенная рассрочка акционная</option>
+                  <option value="1">Банковский перевод	</option>
+                </select>
+              </div>
+            </div>
+            <div class="check-out__form_credit js-credit">
+              <table>
+                <tr>
+                  <td> <span>Количество частей</span></td>
+                  <td> 
+                    <div class="select-cred-arrow">
+                      <select class="select-cred"> 
+                        <option>15 мес</option>
+                        <option>10 мес</option>
+                        <option>5 мес</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td> <span>Ежемесячная комиссия</span></td>
+                  <td> <span>3% </span></td>
+                </tr>
+                <tr> 
+                  <td> <span>Ежемесячный платеж (грн)</span></td>
+                  <td> <span>720</span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="check-out__form_credit js-pr-credit">
+              <table>
+                <tr>
+                  <td> <span>Льготный период</span></td>
+                  <td> <span>15 мес</span></td>
+                </tr>
+                <tr>
+                  <td> <span>Срок кредита</span></td>
+                  <td> 
+                    <div class="select-cred-arrow">
+                      <select class="select-cred"> 
+                        <option>15 мес</option>
+                        <option>10 мес</option>
+                        <option>5 мес </option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> <span>Первый взнос (грн)</span></td>
+                  <td> 
+                    <input class="number-cred" type="number" value="0" name="eyes" min="0" max="100">
+                  </td>
+                </tr>
+                <tr>
+                  <td> <span>Сумма кредита (грн)</span></td>
+                  <td> <span>1000 </span></td>
+                </tr>
+                <tr>
+                  <td> <span>Ежемесячная комиссия после льготного периода</span></td>
+                  <td> <span>3% от суммы кредита </span></td>
+                </tr>
+                <tr>
+                  <td> <span>Годовая процентная ставка</span></td>
+                  <td> <span>0,01% </span></td>
+                </tr>
+                <tr>
+                  <td> <span>Ежемесячный платеж (грн)</span></td>
+                  <td> <span>720</span></td>
+                </tr>
+              </table>
+              <div class="check-out__form_credit_radio">
+                <div class="input-radio">
+                  <input class="styled-radio js-radio1" id="zapb1" type="radio" name="contact2" value="Паспорт" checked="checked">
+                  <label class="clearfix" for="zapb1"><span>Паспорт </span></label>
+                </div>
+                <div class="input-radio">
+                  <input class="styled-radio js-radio2" id="zapb2" type="radio" name="contact2" value="ID паспорт">
+                  <label class="clearfix" for="zapb2"><span>ID паспорт </span></label>
+                </div>
+              </div>
+              <div class="check-out__form_credit_pasport pasport open">
+                <div class="check-out__form_row">
+                  <label>Имя*</label>
+                  <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Фамилия*</label>
+                  <input type="text" placeholder="Введите вашу фамилию">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Отчество*</label>
+                  <input type="text" placeholder="Введите ваше отчество">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Серия и номер паспорта*</label>
+                  <div class="check-out__form_row_col">
+                    <div class="check-out__form_row_col-4">
+                      <input type="text" placeholder="Серия">
+                    </div>
+                    <div class="check-out__form_row_col-8">
+                      <input type="text" placeholder="Номер">
+                    </div>
+                  </div>
+                </div>
+                <div class="check-out__form_row">
+                  <label>Кем выдан паспорт и когда*</label>
+                  <input type="text" placeholder="Введите кем выдан паспорт и когда">
+                </div>
+                <div class="check-out__form_row">
+                  <label>ИНН*</label>
+                  <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Дата рождения*</label>
+                  <input type="date" placeholder="Дата рождения">
+                </div>
+              </div>
+              <div class="check-out__form_credit_idpasport idpasport">
+                <div class="check-out__form_row">
+                  <label>Имя*</label>
+                  <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Фамилия*</label>
+                  <input type="text" placeholder="Введите вашу фамилию">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Отчество*</label>
+                  <input type="text" placeholder="Введите ваше отчество">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Запись №:*</label>
+                  <input type="text" placeholder="Запись №">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Документ №:*</label>
+                  <input type="text" placeholder="Документ №">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Орган выдачи:*</label>
+                  <input type="text" placeholder="Орган выдачи">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Дата выдачи:*</label>
+                  <input type="text" placeholder="Дата выдачи">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Действителен до:*</label>
+                  <input type="text" placeholder="Действителен до">
+                </div>
+                <div class="check-out__form_row">
+                  <label>ИНН:*</label>
+                  <input type="text" placeholder="ИНН">
+                </div>
+                <div class="check-out__form_row">
+                  <label>Дата рождения*</label>
+                  <input type="date" placeholder="Дата рождения">
+                </div>
+              </div>
+            </div>
+            <div class="check-out__form_coment"><span class="coment js-coment">Добавить комментарий к заказу</span>
+              <div class="check-out__form_coment_block js-coment-textarea">
+                <textarea></textarea>
+              </div>
+            </div>
+            <div class="check-out__form_checbox">
+              <div class="input-checbox1">
+                <input class="styled-checkbox1" id="styled-checkbox-6" type="checkbox" value="value1" checked="checked" required>
+                <label class="clearfix" for="styled-checkbox-6"><span>Оформляя заказ, я соглашаюсь стать участником программы лояльности «Фокс клуб» и получать бонусы за покупки и другие преимущества участия.</span></label>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="check-out__open"><span class="open-open js-open-product">Посмотреть товары</span></div>
+      </div>
+      <div class="check-out__product">
+        <div class="check-out__product_item js-open-pr">
+          <div class="check-out__product_item_product">
+            <p class="bold">Ваши товары</p>
+          </div>
+          <div class="check-out__product_item_addres">
+            <p>"Фокстрот", ул. Независимости, 81  <span class="red">Пн-Сб 8:00-17:00 Вс 8:00-16:00 </span></p>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span><span class="product-oldPrice">14 295 грн</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span></div>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span><span class="product-oldPrice">14 295 грн</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span></div>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span><span class="product-oldPrice">14 295 грн</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span></div>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span><span class="product-oldPrice">14 295 грн</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span></div>
+          </div>
+          <div class="check-out__product_item_score"><span class="score js-score">Выберете другой магазин</span>
+            <div class="check-out__product_item_score_block js-score-open">
+              <div class="check-out__form_row">
+                <select class="js-example-basic-single1 js-states form-control">
+                  <option></option>
+                  <option value="AL">Отлеление № 1: ул. Пироговский путь 135</option>
+                  <option value="WY">Отлеление № 1: ул. Пироговский путь 135</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-out__product_total js-open-pr">
+          <div class="check-out__product_total_right"><span class="price-bonus">Начисленно бонусов: <span class="semibold">400 грн</span></span><span class="price">Итого к оплате:  <span class="bold">39 000грн</span></span></div>
+        </div>
+        <div class="check-out__product_item js-open-pr">
+          <div class="check-out__product_item_product">
+            <p class="bold">Ваши товары</p>
+          </div>
+          <div class="check-out__product_item_delet">
+            <p> </p>
+          </div>
+          <div class="check-out__product_item_addres">
+            <p>"Фокстрот", ул. Независимости, 81  <span class="red">Пн-Сб 8:00-17:00 Вс 8:00-16:00</span></p>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span><span class="product-oldPrice">14 295 грн</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span>
+              <div class="check-out__product_item_block_text_gift clearfix">
+                <div class="check-out__product_item_block_text_gift_img"><img src="img/mouse.png"></div>
+                <div class="check-out__product_item_block_text_gift_text"><span class="check-out__product_item_block_text_gift_text_titel">подарок</span><span class="check-out__product_item_block_text_gift_text_text">
+                     	Мышь Logitech M185<br> Wireless Grey </span></div>
+              </div>
+            </div>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span><span class="product-oldPrice">14 295 грн</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span></div>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span><span class="product-oldPrice">14 295 грн</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span></div>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span><span class="product-oldPrice">14 295 грн</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span></div>
+          </div>
+          <div class="check-out__product_item_score"><span class="score js-score">Выберете другой магазин</span>
+            <div class="check-out__product_item_score_block js-score-open">
+              <div class="check-out__form_row">
+                <select class="js-example-basic-single1 js-states form-control">
+                  <option></option>
+                  <option value="AL">Отлеление № 1: ул. Пироговский путь 135</option>
+                  <option value="WY">Отлеление № 1: ул. Пироговский путь 135</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-out__product_total js-open-pr">
+          <div class="check-out__product_total_right"><span class="price-bonus">Начисленно бонусов: <span class="semibold">400 грн</span></span><span class="price">Итого к оплате:  <span class="bold">39 000грн</span></span></div>
+        </div>
+        <div class="check-out__product_item js-open-pr">
+          <div class="check-out__product_item_action"> <span class="check-out__product_item_action_red">Акционное предложение: </span><span class="check-out__product_item_action_text"> Комплект</span></div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/nout.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Ноутбук Dell Latitude E6410 14" i5 4GB RAM 160GB</span></div>
+          </div>
+          <div class="check-out__product_item_block">
+            <div class="check-out__product_item_closed"></div>
+            <div class="check-out__product_item_block_img"><img src="img/word.png"></div>
+            <div class="check-out__product_item_block_text"><span class="product-titel">Программное обеспечение MICROSOFT Office 365 Personal</span><span class="product-price"><span class="product-price-number">123 999 грн</span><span class="product-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span></div>
+          </div>
+        </div>
+        <div class="check-out__product_total js-open-pr">
+          <div class="check-out__product_total_right"><span class="price-bonus">Начисленно бонусов: <span class="semibold">400 грн</span></span><span class="price">Итого к оплате:  <span class="bold">39 000грн</span></span></div>
+        </div>
+        <div class="check-out__product_total top">
+          <div class="check-out__product_total_left"><a href="#">Изменить</a></div>
+          <div class="check-out__product_total_right"><span class="price-bonus">Начисленно бонусов: <span class="semibold">400 грн</span></span><span class="price">Итого к оплате:  <span class="bold">39 000грн</span></span></div>
+        </div>
+        <div class="check-out__product_item js-open-pr">
+          <div class="check-out__product_item_product">
+            <p class="bold">Ваши товары</p>
+          </div>
+          <div class="check-out__product_item_delet">
+            <p>Вы удалили все товары. <a href="#">Вернуться на главную</a></p>
+          </div>
+        </div>
+        <div class="check-out__product_code">
+          <div class="check-out__product_code_bonus"><span class="text"><span class="titel js-bonus">Применить  бонусы</span><span class="code-bonus"> <i class="icon-bonus"></i>+ 200 грн бонусов</span></span>
+            <div class="check-out__product_code_input js-bonus_input">
+              <input type="text" placeholder="Введите сумму бонусов">
+              <button class="btn">Применить</button>
+            </div>
+          </div>
+          <div class="check-out__product_code_bonus"><span class="text"><span class="titel js-promotional">Применить  промокод</span></span>
+            <div class="check-out__product_code_input js-promotional_input">
+              <input type="text" placeholder="Введите промокод">
+              <button class="btn">Применить</button>
+            </div>
+          </div>
+          <div class="check-out__product_code_bonus"><span class="text"><span class="titel js-certificate">Применить  сертификат</span></span>
+            <div class="check-out__product_code_input js-certificate_input">
+              <input type="text" placeholder="Введите номер сертификата">
+              <button class="btn">Применить</button>
+            </div>
+          </div>
+          <div class="check-out__form_row button">
+            <button class="btn">Подтвердить заказ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__row">
+      <p>Все права защищены «Фокстрот» Copyright © 2018</p>
+    </div>
+  </footer>
+  <script src="js/libs.min.js"></script>
+  <script src="js/jquery.inputmask.bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
