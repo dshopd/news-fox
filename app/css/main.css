@@ -810,12 +810,11 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   color: #000000;
-  background: #E5E5E5;
+  background: #F2F2F2;
   line-height: 1.3; }
 
 .header {
-  height: 100px;
-  border-bottom: 8px solid #ef4023;
+  height: 64px;
   background: #fff;
   margin-bottom: 17px; }
   .header__row {
@@ -830,13 +829,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 30%;
     height: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
     .header__logo a {
-      width: 300px; }
+      width: 150px; }
       .header__logo a img {
         max-width: 100%;
         height: auto; }
@@ -1272,10 +1270,13 @@ body {
         color: #2F80ED;
         text-decoration: none; }
     .check-out__product_item_product {
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      margin-left: -5%; }
       .check-out__product_item_product p {
         font-weight: 700;
         font-size: 16px; }
+    .check-out__product_item_delet {
+      margin-left: -5%; }
     .check-out__product_item_addres {
       margin-bottom: 25px; }
       .check-out__product_item_addres p {
@@ -1757,7 +1758,11 @@ body {
   .js-open-pr {
     display: none; }
     .js-open-pr.open {
-      display: block; } }
+      display: block; }
+  .check-out__product_item_product {
+    margin-left: 0; }
+  .check-out__product_item_delet {
+    margin-left: 0; } }
 
 @media (max-width: 767px) {
   .check-out__form {
