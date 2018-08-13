@@ -414,19 +414,29 @@ body
 					color: #000
 					margin: 0 10px
 					cursor: pointer 
+					border: 1px solid #EF4123
+					padding: 3px 5px
 					&.active 
 						color: #2F80ED
+						border: 1px solid rgba(0,0,0,0)
 				
 
 
 	&__product
 		width: 43.2%
 		&_item
-			padding: 41px 77px
 			background: #fff
 			position: relative
 			border-bottom: 0.5px solid #BDBDBD
+			&_otstup
+				padding: 0px 77px 41px
+				&.top-otst
+					padding-top: 41px
 			&_delet 
+				padding: 41px 77px 41px 12px
+				.bold 
+					font-weight: 700
+					font-size: 16px
 				p 
 					font-weight: 500
 					font-size: 13px
@@ -435,13 +445,12 @@ body
 						color: #2F80ED
 						text-decoration: none
 			&_product
-				margin-bottom: 15px
-				margin-left: -5%
+				padding-top: 41px
+				margin-left: 12px
+				margin-bottom: 20px
 				p 
 					font-weight: 700
 					font-size: 16px
-			&_delet
-				margin-left: -5%
 			&_addres
 				margin-bottom: 25px
 				p 
@@ -479,7 +488,7 @@ body
 				height: 12px
 				position: absolute
 				top: -5px
-				left: -30px
+				left: -12%
 				background: url("../img/closed.svg") no-repeat center center
 				cursor: pointer
 			&_block
@@ -544,7 +553,7 @@ body
 								display: block
 								font-size: 12px
 		&_total
-			padding: 18px 41px 41px 81px
+			padding: 18px 41px 41px 12px
 			background: #fff
 			position: relative
 			display: flex
@@ -583,7 +592,7 @@ body
 						position: relative
 						top: 3px
 		&_code
-			padding: 23px 47px
+			padding: 23px 47px 23px 12px
 			background: #fff
 			margin-top: 6px
 			&_input
