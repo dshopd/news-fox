@@ -842,8 +842,11 @@ body
 
 
 @media (max-width: 1365px)
-	.check-out__product_item
-		padding: 26px 38px
+	.check-out__product_item_otstup 
+		padding-left: 40px
+		padding-right: 15px
+	.check-out__product_item_closed 
+		left: -7%
 	.check-out__product_total
 		padding: 18px 40px 25px 35px
 	.check-out__product_total_left
@@ -900,9 +903,13 @@ body
 		&.open
 			display: block
 	.check-out__product_item_product
-		margin-left: 0
+		margin-left: 15px
 	.check-out__product_item_delet
 		margin-left: 0
+	.check-out__product_total_right
+		width: 100%
+	.check-out__product_total_left
+		width: 100%
 @media (max-width: 767px)
 	.check-out__form
 		padding: 15px 10px
@@ -947,6 +954,12 @@ body
 		display: none
 	.header__logo
 		width: 100%
+	.check-out__product_item_product
+		margin-left: 0
+		padding-top: 0px
+	.check-out__product_item_otstup
+		padding-left: 0
+		padding-right: 0
 @media (max-width: 479px)
 	.check-out__form_way_contact .contact
 		padding: 15px 10px
