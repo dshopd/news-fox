@@ -1704,6 +1704,10 @@ body {
 .check-out__form .check-out__product_code {
   display: none; }
 
+@media (min-width: 1880px) {
+  .check-out__product_item_closed {
+    left: -8%; } }
+
 @media (max-width: 1365px) {
   .check-out__product_item_otstup {
     padding-left: 40px;
