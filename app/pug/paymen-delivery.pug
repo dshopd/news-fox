@@ -286,6 +286,30 @@ body
 								input#styled-checkbox-6.styled-checkbox1(type="checkbox", value="value1", checked="checked", required)
 								label.clearfix(for="styled-checkbox-6")
 									span Оформляя заказ, я соглашаюсь стать участником программы лояльности «Фокс клуб» и получать бонусы за покупки и другие преимущества участия.
+				.check-out__product_code
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-bonus Применить  бонусы
+							span.code-bonus 
+								i.icon-bonus
+								| + 200 грн бонусов
+						.check-out__product_code_input.js-bonus_input
+							input(type="text", placeholder="Введите сумму бонусов")
+							button.btn Применить
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-promotional Применить  промокод
+						.check-out__product_code_input.js-promotional_input
+							input(type="text", placeholder="Введите промокод")
+							button.btn Применить
+					.check-out__product_code_bonus
+						span.text
+							span.titel.js-certificate Применить  сертификат
+						.check-out__product_code_input.js-certificate_input
+							input(type="text", placeholder="Введите номер сертификата")
+							button.btn Применить
+					.check-out__form_row.button
+						button.btn Подтвердить заказ
 				.check-out__open
 					span.open-open.js-open-product Посмотреть товары
 			.check-out__product
@@ -466,7 +490,7 @@ body
 							span.semibold 400 грн
 						span.price Итого к оплате:  
 							span.bold 39 000грн
-				.check-out__product_total.top
+				.check-out__product_total.top.js-open-pr
 					.check-out__product_total_left
 						a(href="#") Изменить
 					.check-out__product_total_right
@@ -479,7 +503,7 @@ body
 						p.bold Ваши товары
 						p Вы удалили все товары. 
 							a(href="#") Вернуться на главную
-				.check-out__product_code
+				.check-out__product_code.js-open-pr
 					.check-out__product_code_bonus
 						span.text
 							span.titel.js-bonus Применить  бонусы
